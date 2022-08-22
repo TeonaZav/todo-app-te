@@ -30,3 +30,4 @@ Our challenge was to build out this Todo app using any tools, and get it looking
 ## URL
 
 https://todo-app-te.netlify.app/ <br>
+https://teonazav.github.io/todo-app-te/
