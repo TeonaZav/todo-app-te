@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Todo app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <header class="header">
+          <div>
+            <img src="images/TODO 2.png" alt="logo" class="logo" />
+            <h1>todo</h1>
+          </div>
+          <label class="theme-switch">
+            <input class="theme-switch-input" type="checkbox" />
+            <img src="images/icon-moon.svg" class="toggle-img" />
+          </label>
+        </header>
+        <main>
+          <form id="form">
+            <input
+              class="text-field"
+              type="text"
+              autocomplete="off"
+              placeholder="Create a new todo…"
+            />
+            <button
+              type="submit"
+              form="form"
+              class="btn btn-create-item"
+            ></button>
+          </form>
+          <div class="items-container">
+            <ul
+              class="items"
+              ondrop="drop(event)"
+              ondragover="allowDrop(event)"
+            ></ul>
+          </div>
+
+          <div class="filter-btn-container">
+            <div class="item-left-delete">
+              <div class="items-left">
+                <span class="number-left" value="5">5</span>&nbsp;&nbsp;items
+                left
+              </div>
+              <div class="clear-completed">Clear Completed</div>
+            </div>
+
+            <form class="filter-form">
+              <div class="filter-container">
+                <label class="check-label" for="all"
+                  ><input class="check" id="all" type="radio" /><span>All</span>
+                </label>
+
+                <label class="check-label" for="active"
+                  ><input class="check" id="active" type="radio" /><span
+                    >Active</span
+                  >
+                </label>
+
+                <label class="check-label" for="completed"
+                  ><input class="check" id="completed" type="radio" /><span
+                    >Completed</span
+                  >
+                </label>
+              </div>
+            </form>
+          </div>
+        </main>
+      </div>
+
+      <footer><p>Drag and drop to reorder list</p></footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
